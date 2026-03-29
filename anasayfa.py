@@ -84,4 +84,4 @@ if st.button("SİSTEMİ ÇALIŞTIR 🚀"):
         st.warning("Lütfen boş bırakma, bir şeyler yaz!")
 
 # Alt bilgi
-st.markdown("<br><br><p style='text-align: center; color: #4a5568;'>bu gün yapayım</p>", unsafe_allow_html=True)
+st.markdown("<br><br><p style='text-align: center; color: #4a5568;'>bu gün ne yapayım</p>", unsafe_allow_html=True)
