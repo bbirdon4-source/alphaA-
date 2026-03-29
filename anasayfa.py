@@ -48,11 +48,11 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🎮 GERÇEK YAPAY ZEKA ASİSTANI")
+st.title("NovaAi")
 st.write("<p style='text-align: center; color: #a0aec0;'>Artık gerçek bir beynim var! Bana her şeyi sorabilirsin.</p>", unsafe_allow_html=True)
 
 # Kullanıcıdan girdi alma
-soru = st.text_input("Bana bir soru sor veya bir ajan adı yaz:")
+soru = st.text_input("Bana soru sor:")
 
 if st.button("SİSTEMİ ÇALIŞTIR 🚀"):
     if soru:
@@ -65,13 +65,13 @@ if st.button("SİSTEMİ ÇALIŞTIR 🚀"):
             # Yapay zekaya bir rol veriyoruz ki oyuncu gibi cevap versin
             komut = f"Sen bir oyuncu asistanı yapay zekasısın. Sorulan soruya bir oyuncu samimiyetiyle ve bilgisiyle cevap ver. Soru şu: {soru}"
             
-            with st.spinner("Yapay zeka düşünüyor..."):
+            with st.spinner("Düşünüyorum..."):
                 response = model.generate_content(komut)
             
             # Gelen cevabı havalı kutumuzun içinde gösteriyoruz
             st.markdown(f"""
             <div class='taktik-kutusu'>
-                <h3 style='color: #00ffaa;'>🤖 Yapay Zeka Cevabı:</h3>
+                <h3 style='color: #00ffaa;'> Yapay Zeka Cevabı:</h3>
                 <p>{response.text}</p>
             </div>
             """, unsafe_allow_html=True)
@@ -84,4 +84,4 @@ if st.button("SİSTEMİ ÇALIŞTIR 🚀"):
         st.warning("Lütfen boş bırakma, bir şeyler yaz!")
 
 # Alt bilgi
-st.markdown("<br><br><p style='text-align: center; color: #4a5568;'>Bu site senin ellerinle kodlandı! 🚀</p>", unsafe_allow_html=True)
+st.markdown("<br><br><p style='text-align: center; color: #4a5568;'>bu gün yapayım</p>", unsafe_allow_html=True)
