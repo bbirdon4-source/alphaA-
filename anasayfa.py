@@ -5,7 +5,7 @@ import google.generativeai as genai
 genai.configure(api_key="AIzaSyDLkWlueyBkqInr_IoJTS5DMnZwmzHSTGQ")
 
 # Sayfa ayarları ve başlık
-st.set_page_config(page_title="Oyuncu Asistanı", page_icon="🎮", layout="centered")
+st.set_page_config(page_title="NovaAi", page_icon="", layout="centered")
 
 # Koyu Tema ve Havalı Tasarım (CSS)
 st.markdown("""
