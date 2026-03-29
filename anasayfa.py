@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Senin aldığın API anahtarını buraya bağladık!
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"]")
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # Sayfa ayarları ve başlık
 st.set_page_config(page_title="NovaAi", page_icon="", layout="centered")
